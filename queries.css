@@ -1,0 +1,106 @@
+/* ///////// X-Large */
+@media (max-width: 1200px) {
+  .carousel-container {
+    height: 180px;
+  }
+
+  .schedule-container {
+    margin-right: 0px;
+  }
+}
+
+/* ///////// Large */
+@media (max-width: 992px) {
+  .carousel-container {
+    height: 280px;
+  }
+}
+
+/* ///////// Medium */
+@media (max-width: 768px) {
+  .carousel-container {
+    height: 470px;
+  }
+  .team-tabs {
+    display: none;
+  }
+
+  .logo-text,
+  .logo-footer-text {
+    width: 75px;
+    height: auto;
+  }
+
+  .nav-link,
+  .copyright {
+    font-size: 10px !important;
+  }
+
+  .history-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .team-content {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .history-title {
+    width: 40%;
+    height: auto;
+  }
+
+  .team-title {
+    width: 39%;
+    height: auto;
+  }
+
+  .history-text {
+    padding-left: 0px;
+  }
+
+  .team-text {
+    margin-top: 0.4rem;
+  }
+}
+
+/* ///////// Small */
+@media (max-width: 576px) {
+  .carousel-container {
+    height: 380px;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    border-bottom: none;
+    padding-bottom: 2px;
+    letter-spacing: none;
+  }
+
+  .nav-link,
+  .copyright {
+    font-size: 9px !important;
+  }
+}
+
+/* ///////// Ex-Small */
+@media (max-width: 450px) {
+  .carousel-container {
+    height: 310px;
+  }
+
+  .nav-link {
+    font-size: 8px !important;
+  }
+
+  .copyright {
+    font-size: 7px !important;
+  }
+
+  .schedule-container {
+    padding-left: 19px;
+    padding-right: 19px;
+    font-size: 10px;
+  }
+}

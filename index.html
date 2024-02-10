@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Meta description -->
+    <meta name="Los Angeles Hiking" content="Let's climb!" />
+
+    <!-- icon in title - 64 by 64 -->
+    <link rel="icon" href="img/Favicons/logo-64by64.png" />
+
+    <!-- icon for iOS homescreen as favorited website 180 by 180 -->
+    <link rel="apple-touch-icon" href="img/Favicons/logo-180by180.png" />
+
+    <!-- icon for Android homescreen as favorited website - create manifest.webmanifest file -->
+    <!-- NOTE in the manifest.webmanifest file, specify the imgs sizes as 512 by 512, and 192 by 192 -->
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- rubik -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- League Gothic -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap link for js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Default bootstrap link for CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <!-- bxSlider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".bxslider").bxSlider({
+          infiniteLoop: false,
+          hideControlOnEnd: true,
+          slideWidth: 600,
+          startSlide: 1,
+          responsive: true,
+        });
+      });
+    </script>
+
+    <!-- Custom CSS stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="queries.css" />
+
+    <title>Coalition Test Project - Meisi Le</title>
+  </head>
+  <body>
+    <!-- Section Hero -->
+    <section class="section-hero">
+      <!-- Hero navbar -->
+      <nav class="navbar navbar-expand navbar-hero justify-content-start">
+        <!-- container -->
+        <div class="container mx-1 mx-sm-0 px-2 px-md-5">
+          <!-- empty col -->
+          <div class="col-0 col-sm-0 col-md-0 col-lg-1 col-xl-2"></div>
+
+          <!-- navbar logo -->
+          <div class="col-1 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+            <a href="#" class="navbar-brand ps-lg-4">
+              <img
+                class="logo hero-logo"
+                alt="hero logo"
+                src="img/Hero/SQNN-hero-Logo.png"
+              />
+            </a>
+          </div>
+
+          <!-- empty col -->
+          <div class="col-6 col-sm-7 col-md-7 col-lg-6 col-xl-6"></div>
+
+          <!-- Navbar content -->
+          <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-3">
+            <div class="justify-content-end align-items-center" id="main-nav">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item me-0 me-sm-4 me-lg-5">
+                  <a class="nav-link fs-6 fst-italic text-light" href="#history"
+                    >01. HISTORY</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link fs-6 fst-italic text-light" href="#team"
+                    >02. TEAM</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section Image -->
+      <img
+        class="hero-background"
+        src="img/Hero/SQ-hero-background-cut-cropped.jpg"
+        alt="hero image"
+      />
+    </section>
+
+    <!-- Section Sticky Menu -->
+    <nav
+      class="navbar navbar-expand sticky-top navbar-sticky align-items-center justify-content-lg-start bg-light py-3"
+    >
+      <!-- container -->
+      <div class="container mx-1 mx-sm-0 px-2 px-md-5">
+        <!-- empty col -->
+        <div class="col-0 col-sm-0 col-md-0 col-lg-1 col-xl-2"></div>
+
+        <!-- sticky navbar logo -->
+        <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+          <a href="#" class="d-flex navbar-brand ps-lg-4 align-items-center">
+            <img
+              class="logo sticky-logo me-2 me-md-3"
+              alt="sticky logo"
+              src="img/Sticky Menu/SQNN-sticky-menu-logo.png"
+            />
+            <img
+              class="logo-text sticky-logo-text"
+              alt="sticky logo"
+              src="img/Sticky Menu/SQNN-sticky-menu-text.png"
+            />
+          </a>
+        </div>
+
+        <!-- empty col -->
+        <div class="col-5 col-sm-6 col-md-6 col-lg-5 col-xl-5"></div>
+
+        <!-- Sticky nav bar content -->
+        <div class="col-5 col-sm-4 col-md-4 col-lg-4 col-xl-3">
+          <div class="justify-content-end align-items-center">
+            <ul class="navbar-nav align-items-center">
+              <li class="nav-item me-0 me-sm-4 me-lg-5">
+                <a
+                  class="nav-link nav-link-sticky fs-6 fst-italic"
+                  href="#history"
+                  >01. HISTORY</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link-sticky fs-6 fst-italic" href="#team"
+                  >02. TEAM</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section History -->
+    <section class="section-history" id="history">
+      <!-- History content section -->
+      <div class="container history-container">
+        <!-- Content Container -->
+        <div class="history-content-container row">
+          <!-- empty col -->
+          <div class="col-md-1"></div>
+
+          <!-- History content col -->
+          <div class="col-md-9 history-content">
+            <img
+              class="history-title"
+              src="img/History/SQNN-history-number-and-title.png"
+              alt="history title"
+            />
+            <div class="history-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in
+              ante viverra, rutrum erat rutrum, consectetur mi. Proin at masimus
+              est. Nullam purus ex, iaculis sed erat sed, blandit tincidunt
+              quam. Cras scelerisque id quam sed dignissim Pellentesque urna
+              nunc, gravida quis hendrerit ac, tristique ut quam. Vivamus
+              suscipit dignissim tortor nec congue.
+            </div>
+          </div>
+          <!-- empty col -->
+          <div class="col-md-2"></div>
+        </div>
+      </div>
+
+      <!-- Carousel Container -->
+      <div class="carousel-container">
+        <!--bx Slider -->
+        <div class="slider-segment">
+          <div class="row">
+            <div class="col-1 col-md-4 col-lg-5"></div>
+            <div class="col-10 col-md-4 col-lg-2 slider-container">
+              <!-- bxslider -->
+              <div class="bxslider">
+                <div>
+                  <img
+                    class="slider-img"
+                    src="img/Carousel/SQNN-carousel-img-2-all-revised.png"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="slider-img"
+                    src="img/Carousel/SQNN-carousel-img-1-all.png"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="slider-img"
+                    src="img/Carousel/SQNN-carousel-img-2-all-revised.png"
+                  />
+                </div>
+                <div>
+                  <img
+                    class="slider-img"
+                    src="img/Carousel/SQNN-carousel-img-1-all.png"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="col-1 col-md-4 col-lg-5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="section-team" id="team">
+      <!-- Team header section -->
+      <div class="team-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-2"></div>
+            <div
+              class="col-md-8 team-content d-flex flex-column flex-md-row align-items-start align-items-md-center"
+            >
+              <!-- team title and number -->
+              <img
+                class="team-title me-5"
+                src="img/team/SQNN-team-number-and-title.png"
+                alt="team title"
+              />
+              <!-- text -->
+              <div class="team-text">
+                Cras scelerisque id quam sed dignissim Pellentesque urna nunc,
+                gravida quis hendrerit ac, tristique ut quam. Vivamus suscipit
+                dignissim tortor nec congue.
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Tab section -->
+      <div class="team-tabs">
+        <!-- nav (tabs) -->
+        <nav>
+          <div class="row tabs-row">
+            <div class="col-2"></div>
+            <!-- tab col -->
+            <div class="col-5 ps-5">
+              <div class="nav nav-pills" id="pills-tab" role="tablist">
+                <!-- nav btn -->
+                <button
+                  class="nav-link nav-link-team active"
+                  id="nav-mountain1"
+                  data-bs-toggle="pill"
+                  data-bs-target="#nav-pane-mountain1"
+                  type="button"
+                  role="tab"
+                  aria-controls="mountain 1"
+                  aria-selected="true"
+                >
+                  <div class="nav-btn my-2">MOUNTAIN 1</div>
+                </button>
+
+                <!-- nav btn -->
+                <button
+                  class="nav-link nav-link-team"
+                  id="nav-mountain2"
+                  data-bs-toggle="pill"
+                  data-bs-target="#nav-pane-mountain2"
+                  type="button"
+                  role="tab"
+                  aria-controls="mountain 2"
+                  aria-selected="false"
+                >
+                  <div class="nav-btn my-2">MOUNTAIN 2</div>
+                </button>
+              </div>
+            </div>
+            <div class="col-5"></div>
+          </div>
+        </nav>
+
+        <!-- tab content -->
+        <div class="tab-content" id="pills-tabContent">
+          <!-- tab 1 -->
+          <!-- id matches with tab above -->
+          <div
+            class="tab-pane fade show active"
+            id="nav-pane-mountain1"
+            role="tabpanel"
+            aria-labelledby="nav mountain1"
+          >
+            <!-- tab pane content -->
+            <div class="tab-background tab-background-1">
+              <div class="container">
+                <div class="row">
+                  <!-- Empty col -->
+                  <div class="col-1 col-sm-2 col-md-3 col-lg-2"></div>
+                  <!-- Team content col -->
+                  <div class="col-9 col-sm-8 col-md-6 col-lg-4">
+                    <div class="schedule-container">
+                      <div class="schedule-title-container">
+                        <!-- Schedule title -->
+                        <img
+                          class="schedule-title"
+                          src="img/Team/SQNN-team-tab-content-1-Schedule-title.png"
+                          alt="schedule title"
+                        />
+                      </div>
+                      <!-- Schedule content -->
+                      <div class="schedule-content-container">
+                        <!-- Schedule rows -->
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">25 Nov 2016</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">28 Nov 2016</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time"></div>
+                          <div class="col-7 schedule-text"></div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">18 Dec 2016</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time"></div>
+                          <div class="col-7 schedule-text"></div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">7 Jan 2017</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Empty col -->
+                  <div class="col-2 col-sm-2 col-md-3 col-lg-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tab 2 -->
+          <div
+            class="tab-pane fade"
+            id="nav-pane-mountain2"
+            role="tabpanel"
+            aria-labelledby="nav mountain2"
+          >
+            <!-- tab pane content -->
+            <div class="tab-background tab-background-2">
+              <div class="container">
+                <div class="row">
+                  <!-- Empty col -->
+                  <div class="col-1 col-sm-2 col-md-3 col-lg-2"></div>
+                  <!-- Team content col -->
+                  <div class="col-9 col-sm-8 col-md-6 col-lg-4">
+                    <div class="schedule-container">
+                      <div class="schedule-title-container">
+                        <!-- Schedule title -->
+                        <img
+                          class="schedule-title"
+                          src="img/Team/SQNN-team-tab-content-1-Schedule-title.png"
+                          alt="schedule title"
+                        />
+                      </div>
+                      <!-- Schedule content -->
+                      <div class="schedule-content-container">
+                        <!-- Schedule rows -->
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">17 Nov 2016</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time"></div>
+                          <div class="col-7 schedule-text"></div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">13 Dec 2016</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">28 Dec 2016</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time"></div>
+                          <div class="col-7 schedule-text"></div>
+                        </div>
+                        <div class="row schedule-row py-1">
+                          <div class="col-5 schedule-time">9 Feb 2017</div>
+                          <div class="col-7 schedule-text">
+                            Vestibulum viverra
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Empty col -->
+                  <div class="col-2 col-sm-2 col-md-3 col-lg-6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Team Accordion Section -->
+      <div class="team-accordion d-md-none">
+        <!-- accordion -->
+        <div class="accordion accordion-flush" id="accordion-section">
+          <!-- accordion item 1 -->
+          <div class="accordion-item">
+            <!-- item 1 header -->
+            <h2 class="accordion-header" id="heading-1">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mountain-1"
+                aria-expanded="true"
+                aria-controls="question-1"
+              >
+                MOUNTAIN 1
+              </button>
+            </h2>
+            <!-- item 1 body -->
+            <!-- accordion-body container -collapsable element -->
+            <div
+              id="mountain-1"
+              class="accordion-collapse collapse"
+              aria-labelledby="mountain-1"
+              data-bs-parent="#accordion-section"
+            >
+              <div class="accordion-body px-0 py-0">
+                <div class="tab-background tab-background-1">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Empty col -->
+                      <div class="col-1 col-sm-2 col-md-3 col-lg-2"></div>
+                      <!-- Team content col -->
+                      <div class="col-9 col-sm-8 col-md-6 col-lg-4">
+                        <div class="schedule-container">
+                          <div class="schedule-title-container">
+                            <!-- Schedule title -->
+                            <img
+                              class="schedule-title"
+                              src="img/Team/SQNN-team-tab-content-1-Schedule-title.png"
+                              alt="schedule title"
+                            />
+                          </div>
+                          <!-- Schedule content -->
+                          <div class="schedule-content-container">
+                            <!-- Schedule rows -->
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">25 Nov 2016</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">28 Nov 2016</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time"></div>
+                              <div class="col-7 schedule-text"></div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">18 Dec 2016</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time"></div>
+                              <div class="col-7 schedule-text"></div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">7 Jan 2017</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Empty col -->
+                      <div class="col-2 col-sm-2 col-md-3 col-lg-6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- accordion item 2 -->
+          <div class="accordion-item">
+            <!-- item 2 header -->
+            <h2 class="accordion-header" id="heading-2">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#mountain-2"
+                aria-expanded="false"
+                aria-controls="question-2"
+              >
+                MOUNTAIN 2
+              </button>
+            </h2>
+            <!-- item 2 body -->
+            <!-- accordion-body container -collapsable element -->
+            <div
+              id="mountain-2"
+              class="accordion-collapse collapse"
+              aria-labelledby="mountain-2"
+              data-bs-parent="#accordion-section"
+            >
+              <div class="accordion-body px-0 py-0">
+                <div class="tab-background">
+                  <div class="container">
+                    <div class="row">
+                      <!-- Empty col -->
+                      <div class="col-1 col-sm-2 col-md-3 col-lg-2"></div>
+                      <!-- Team content col -->
+                      <div class="col-9 col-sm-8 col-md-6 col-lg-4">
+                        <div class="schedule-container">
+                          <div class="schedule-title-container">
+                            <!-- Schedule title -->
+                            <img
+                              class="schedule-title"
+                              src="img/Team/SQNN-team-tab-content-1-Schedule-title.png"
+                              alt="schedule title"
+                            />
+                          </div>
+                          <!-- Schedule content -->
+                          <div class="schedule-content-container">
+                            <!-- Schedule rows -->
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">17 Nov 2016</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time"></div>
+                              <div class="col-7 schedule-text"></div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">13 Dec 2016</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">28 Dec 2016</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time"></div>
+                              <div class="col-7 schedule-text"></div>
+                            </div>
+                            <div class="row schedule-row py-1">
+                              <div class="col-5 schedule-time">9 Feb 2017</div>
+                              <div class="col-7 schedule-text">
+                                Vestibulum viverra
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Empty col -->
+                      <div class="col-2 col-sm-2 col-md-3 col-lg-6"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer Section -->
+      <nav
+        class="navbar navbar-expand navbar-footer align-items-center justify-content-lg-start py-3"
+      >
+        <!-- container -->
+        <div class="container mx-1 mx-sm-0 px-2 px-md-5">
+          <!-- empty col -->
+          <div class="col-0 col-sm-0 col-md-0 col-lg-1 col-xl-2"></div>
+
+          <!-- footer navbar logo -->
+          <div class="col-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+            <a href="#" class="d-flex navbar-brand ps-lg-4 align-items-center">
+              <img
+                class="logo-footer me-2 me-md-3"
+                alt="footer logo"
+                src="img/Footer/SQNN-footer-logo-with-layer.png"
+              />
+              <img
+                class="logo-footer-text"
+                alt="footer logo"
+                src="img/Footer/SQNN-footer-logo-text.png"
+              />
+            </a>
+          </div>
+
+          <!-- empty col -->
+          <div class="col-4 col-sm-5 col-md-5 col-lg-4 col-xl-4"></div>
+
+          <!-- footer nav bar content -->
+          <div class="col-6 col-sm-5 col-md-5 col-lg-5 col-xl-4">
+            <div
+              class="d-flex ps-lg-5 align-items-center justify-content-start"
+            >
+              <div class="copyright">COPYRIGHT 2016. ALL RIGHTS RESERVED.</div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+  </body>
+</html>
